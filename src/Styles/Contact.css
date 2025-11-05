@@ -1,0 +1,44 @@
+.contact {
+  background-color: #f5f3ff; /* même fond que Home/Services */
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  color: #5c4bff; /* violet tech */
+  margin-bottom: 20px;
+}
+
+.contact p {
+  margin-bottom: 40px;
+  color: #4b5563;
+  font-size: 1.1rem;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #d1d5ff;
+  font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #7f5af0; /* violet tech */
+  box-shadow: 0 0 8px rgba(127,90,240,0.3);
+}
+
+.contact-form button {
+  align-content: flex-start;
+}

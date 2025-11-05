@@ -1,0 +1,58 @@
+.services {
+  background-color: #f5f3ff; /* même couleur claire que Home */
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2.5rem;
+  color: #5c4bff; /* violet tech */
+  margin-bottom: 40px;
+}
+
+.plans {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.plan-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 30px 25px;
+  width: 250px;
+  box-shadow: 0 4px 12px rgba(127,90,240,0.1); /* violet léger */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(127,90,240,0.3);
+}
+
+.plan-name {
+  font-size: 1.5rem;
+  color: #7f5af0; /* violet */
+  margin-bottom: 10px;
+}
+
+.plan-price {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.plan-card ul {
+  list-style: none;
+  padding: 0;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .plans {
+    flex-direction: column;
+    align-items: center;
+  }
+}
