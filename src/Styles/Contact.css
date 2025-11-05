@@ -1,44 +1,84 @@
 .contact {
-  background-color: #f5f3ff; /* même fond que Home/Services */
+  background-color: #f5f3ff; /* fond clair cohérent avec Home/Services */
+  color: #1a1a1a;            /* texte sombre */
   padding: 80px 20px;
   text-align: center;
 }
 
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 .contact h2 {
   font-size: 2.5rem;
-  color: #5c4bff; /* violet tech */
+  color: var(--primary);      /* violet tech */
   margin-bottom: 20px;
 }
 
-.contact p {
-  margin-bottom: 40px;
-  color: #4b5563;
+.contact .intro {
   font-size: 1.1rem;
+  color: #333;                /* texte légèrement gris */
+  margin-bottom: 40px;
+  line-height: 1.6;
 }
 
+/* Formulaire */
 .contact-form {
-  max-width: 600px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
 }
 
+/* Inputs, textarea, select */
 .contact-form input,
-.contact-form textarea {
+.contact-form textarea,
+.contact-form select {
   padding: 12px 15px;
   border-radius: 8px;
-  border: 1px solid #d1d5ff;
+  border: 1px solid #ccc;
+  background-color: #ffffff; /* fond clair */
+  color: #1a1a1a;            /* texte sombre */
   font-size: 1rem;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
 }
 
 .contact-form input:focus,
-.contact-form textarea:focus {
+.contact-form textarea:focus,
+.contact-form select:focus {
   outline: none;
-  border-color: #7f5af0; /* violet tech */
-  box-shadow: 0 0 8px rgba(127,90,240,0.3);
+  border-color: var(--primary);
+  box-shadow: 0 0 8px rgba(127, 90, 240, 0.3);
 }
 
+/* Bouton */
 .contact-form button {
-  align-content: flex-start;
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: var(--secondary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(127, 90, 240, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contact-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact-form {
+    gap: 15px;
+  }
 }

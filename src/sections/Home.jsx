@@ -17,7 +17,7 @@ export default function Home() {
           Des sites web <span className="highlight">modernes</span> et <span className="highlight">performants</span>
         </h2>
         <p className="hero-text">
-          Nous concevons des sites web sur mesure adaptés à vos besoins :
+          Concevoir des sites web sur mesure adaptés à vos besoins :
           design élégant, performance, sécurité et référencement.
         </p>
         <div className="hero-buttons">

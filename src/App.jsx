@@ -1,24 +1,27 @@
-import React, { useEffect } from "react"; // ✅ importer useEffect
+import React, { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 import Home from "./sections/Home";
+import About from "./sections/About";
 import Services from "./sections/services";
 import Contact from "./sections/Contact";
 import Footer from "./components/Footer";
 
 function App() {
-  // ✅ useEffect utilisé **à l’intérieur du composant**
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
   }, []);
+
+  const [selectedPlan, setSelectedPlan] = useState(""); // State partagé
 
   return (
     <div>
       <main>
         <Home />
-        <Services />
-        <Contact />
+        <About />
+        <Services setSelectedPlan={setSelectedPlan} /> {/* passer la fonction */}
+        <Contact selectedPlan={selectedPlan} setSelectedPlan={setSelectedPlan} /> {/* passer state et setter */}
       </main>
       <Footer />
     </div>
@@ -26,4 +29,3 @@ function App() {
 }
 
 export default App;
-

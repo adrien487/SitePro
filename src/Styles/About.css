@@ -1,0 +1,42 @@
+.about {
+  background-color: #f5f3ff; 
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about h2 {
+  color: var(--primary);
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+}
+
+.about .intro {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.about .approach {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.about h3 {
+  color: var(--primary);
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.about .tech-list {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 2;
+}
