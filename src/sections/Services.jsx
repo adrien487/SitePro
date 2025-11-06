@@ -2,7 +2,7 @@
 import React from "react";
 import "../Styles/Services.css";
 
-const Services = ({ setSelectedPlan }) => {
+const Services = ({ onSelectOffer }) => {
   const plans = [
     {
       name: "Essential",
@@ -59,7 +59,8 @@ const Services = ({ setSelectedPlan }) => {
               ))}
             </ul>
             <button
-              onClick={() => setSelectedPlan(`${plan.name} - ${plan.price}`)}
+              
+              onClick={() => onSelectOffer(plan.name)}
             >
               Choisir cette offre
             </button>

@@ -13,15 +13,16 @@ function App() {
     AOS.init({ duration: 1000, once: true });
   }, []);
 
-  const [selectedPlan, setSelectedPlan] = useState(""); // State partagé
+  const [selectedOffer, setSelectedOffer] = useState("");
+
 
   return (
     <div>
       <main>
         <Home />
         <About />
-        <Services setSelectedPlan={setSelectedPlan} /> {/* passer la fonction */}
-        <Contact selectedPlan={selectedPlan} setSelectedPlan={setSelectedPlan} /> {/* passer state et setter */}
+        <Services onSelectOffer={setSelectedOffer} />
+        <Contact selectedOffer={selectedOffer} />
       </main>
       <Footer />
     </div>

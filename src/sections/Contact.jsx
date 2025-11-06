@@ -1,37 +1,65 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../Styles/Contact.css";
-export default function Contact({ selectedPlan, setSelectedPlan }) {
+
+export default function Contact({ selectedOffer }) {
+  const [offer, setOffer] = useState("");
+
+  // ✅ Quand une offre est sélectionnée depuis Services.jsx
+  useEffect(() => {
+    if (selectedOffer) {
+      setOffer(selectedOffer);
+      const contactSection = document.getElementById("contact");
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [selectedOffer]);
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert(`Merci ! Vous avez choisi l'offre : ${selectedPlan}`);
+    alert("Message envoyé !");
+    // Ici, tu pourras ensuite brancher ton envoi d’email (EmailJS ou autre)
   };
 
   return (
     <section className="contact" id="contact" data-aos="fade-up">
-      <div className="contact-container">
-        <h2>Contactez-nous</h2>
-        <p className="intro">
-          Vous avez un projet ou des questions ? Envoyez-nous un message et nous vous répondrons rapidement.
-        </p>
+      <h2>Contactez-nous</h2>
+      <form className="contact-form" onSubmit={handleSubmit}>
+        <div className="form-group">
+          <label>Nom complet</label>
+          <input type="text" placeholder="Votre nom" required />
+        </div>
 
-        <form className="contact-form" onSubmit={handleSubmit}>
-          <input type="text" name="name" placeholder="Votre nom" required />
-          <input type="email" name="email" placeholder="Votre email" required />
+        <div className="form-group">
+          <label>Adresse email</label>
+          <input type="email" placeholder="votremail@exemple.com" required />
+        </div>
+
+        <div className="form-group">
+          <label>Type d’offre</label>
           <select
-            name="plan"
-            value={selectedPlan}
-            onChange={(e) => setSelectedPlan(e.target.value)}
+            value={offer}
+            onChange={(e) => setOffer(e.target.value)}
             required
           >
-            <option value="">Sélectionnez une offre</option>
-            <option value="Essential - 400€">Essential - 400€</option>
-            <option value="Basic - 600€">Basic - 600€</option>
-            <option value="Premium - 800€">Premium - 800€</option>
+            <option value="">Choisissez une offre</option>
+            <option value="Essential">Essential - 400€</option>
+            <option value="Basic">Basic - 600€</option>
+            <option value="Premium">Premium - 800€</option>
           </select>
-          <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
-          <button type="submit">Envoyer</button>
-        </form>
-      </div>
+        </div>
+
+        <div className="form-group">
+          <label>Message</label>
+          <textarea
+            rows="5"
+            placeholder="Décrivez votre projet..."
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit">Envoyer</button>
+      </form>
     </section>
   );
 }

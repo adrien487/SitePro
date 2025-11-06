@@ -1,31 +1,35 @@
 import React from "react";
 import "../Styles/About.css";
+import WebIllustration from "../assets/web-illustration.png"; // Exemple d'image à droite
 
 export default function About() {
   return (
     <section className="about" id="about">
-      <div className="about-container">
-        <h2>À propos de A.A. Développement</h2>
+      <div className="about-grid">
+        {/* Partie texte */}
+        <div className="about-text">
+          <h2>À propos de A.A. Développement</h2>
+          <p>
+            Chez <strong>A.A. Développement</strong>, nous créons des sites vitrines sur mesure qui reflètent
+            l’identité et les valeurs de chaque client. Notre mission : transformer votre présence en ligne
+            en un véritable levier de croissance, fidèle à votre image et pensé pour durer.
+          </p>
+          
+          <div className="skills-container">
+            <div className="skill-card">React.js</div>
+            <div className="skill-card">Node.js</div>
+            <div className="skill-card">HTML / CSS / Tailwind</div>
+            <div className="skill-card">SEO & Performance</div>
+            <div className="skill-card">Sécurité & Maintenance</div>
+          </div>
+        </div>
 
-        <p className="intro">
-          Chez <strong>A.A. Développement</strong>, nous accompagnons chaque client de manière personnalisée.
-          Votre site web devient une vitrine fidèle à votre identité, pensée pour mettre en valeur votre entreprise
-          et favoriser sa croissance.
-        </p>
-
-        <p className="approach">
-          Nous croyons en une collaboration à taille humaine : vous échangez directement avec le développeur,
-          du premier rendez-vous à la mise en ligne. Chaque détail est étudié pour que votre site soit performant,
-          esthétique et en accord avec votre image.
-        </p>
-
-        <h3>Nos technologies et compétences</h3>
-        <p className="tech-list">
-          ⚛️ React.js &nbsp; | &nbsp; 💻 Node.js &nbsp; | &nbsp; 🎨 HTML / CSS / Tailwind <br />
-          🚀 SEO & Performance &nbsp; | &nbsp; 🔒 Sécurité & Maintenance <br />
-          📝 WordPress &nbsp; | &nbsp; 🗄️ Git
-        </p>
+        {/* Partie illustration / visuel */}
+        <div className="about-illustration">
+          <img src={WebIllustration} alt="Illustration développement web" />
+        </div>
       </div>
     </section>
   );
 }
+

@@ -12,7 +12,7 @@ export default function Home() {
       </div>
 
       <div className="hero-content" data-aos="fade-up">
-        <h1 className="hero-title">A.A.Développement</h1>
+        <h1 className="hero-title">Test.Développement</h1>
         <h2 className="hero-subtitle">
           Des sites web <span className="highlight">modernes</span> et <span className="highlight">performants</span>
         </h2>
