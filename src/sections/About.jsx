@@ -1,8 +1,23 @@
 import React from "react";
 import "../Styles/About.css";
-import WebIllustration from "../assets/web-illustration.png"; // Exemple d'image à droite
+import WebIllustration from "../assets/web-illustration.png";
+
+// Import des icônes depuis react-icons
+import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaSearch, FaShieldAlt, FaWordpress } from "react-icons/fa";
+
 
 export default function About() {
+
+const skills = [
+  { name: "React.js", icon: <FaReact /> },
+  { name: "Node.js", icon: <FaNodeJs /> },
+  { name: "HTML / CSS / Tailwind", icon: <><FaHtml5 /> / <FaCss3Alt /></> },
+  { name: "SEO & Performance", icon: <FaSearch /> },
+  { name: "Sécurité & Maintenance", icon: <FaShieldAlt /> },
+  { name: "WordPress", icon: <FaWordpress /> },  
+];
+
+
   return (
     <section className="about" id="about">
       <div className="about-grid">
@@ -14,13 +29,14 @@ export default function About() {
             l’identité et les valeurs de chaque client. Notre mission : transformer votre présence en ligne
             en un véritable levier de croissance, fidèle à votre image et pensé pour durer.
           </p>
-          
+
           <div className="skills-container">
-            <div className="skill-card">React.js</div>
-            <div className="skill-card">Node.js</div>
-            <div className="skill-card">HTML / CSS / Tailwind</div>
-            <div className="skill-card">SEO & Performance</div>
-            <div className="skill-card">Sécurité & Maintenance</div>
+            {skills.map((skill, index) => (
+              <div className="skill-card" key={index}>
+                <div className="skill-icon">{skill.icon}</div>
+                <span>{skill.name}</span>
+              </div>
+            ))}
           </div>
         </div>
 
@@ -32,4 +48,3 @@ export default function About() {
     </section>
   );
 }
-

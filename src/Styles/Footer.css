@@ -1,0 +1,21 @@
+.footer {
+  background-color: #1f1f1f; /* fond sombre pro */
+  color: #f5f3ff; /* texte clair */
+  text-align: center;
+  padding: 20px 10px; /* compact mais lisible */
+  font-size: 0.9rem;
+}
+
+.footer a {
+  color: #7f5af0; /* couleur primaire de ton site */
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer a:hover {
+  color: #a78bfa; /* effet hover doux */
+}
+
+.footer-content p {
+  margin: 5px 0; /* peu de marge pour que ce soit compact */
+}

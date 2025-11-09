@@ -6,7 +6,7 @@ import Home from "./sections/Home";
 import About from "./sections/About";
 import Services from "./sections/services";
 import Contact from "./sections/Contact";
-import Footer from "./components/Footer";
+import Footer from "./sections/Footer";
 
 function App() {
   useEffect(() => {
