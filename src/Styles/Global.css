@@ -1,9 +1,9 @@
-/* 🎨 Thème global - A.A.Développement */
+
 html {
   scroll-behavior: smooth;
 }
 .plan-card {
-  background-color: #f9f7ff; /* violet très léger */
+  background-color: #f9f7ff;
   border: 1px solid #e5e5f0;
   border-radius: 16px;
   padding: 40px 25px;
@@ -13,7 +13,7 @@ html {
 
 /* Couleurs principales */
 :root {
-  --primary: #6366f1; /* bleu-violet moderne */
+  --primary: #6366f1; 
   --secondary: #3b82f6;
   --text-dark: #1f2937;
   --text-light: #f8f9fa;
@@ -119,14 +119,14 @@ section {
   border: 1px solid #e5e7eb;
   border-radius: 16px;
   padding: 40px 25px;
-  box-shadow: 0 4px 10px rgba(127,90,240,0.1); /* léger violet pour rappel du Home */
+  box-shadow: 0 4px 10px rgba(127,90,240,0.1); 
   transition: all 0.3s ease;
 }
 
 .plan-card:hover {
   transform: translateY(-8px);
   border-color: var(--primary);
-  box-shadow: 0 8px 20px rgba(127,90,240,0.25); /* violet plus visible au hover */
+  box-shadow: 0 8px 20px rgba(127,90,240,0.25); 
 }
 
 .plan-card h3 {
@@ -183,5 +183,5 @@ section {
 .plan-card button:hover {
   background: var(--secondary);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(127,90,240,0.4); /* léger glow violet */
+  box-shadow: 0 4px 12px rgba(127,90,240,0.4); 
 }

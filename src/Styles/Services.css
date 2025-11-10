@@ -1,24 +1,24 @@
 .services {
-  background-color: #f5f3ff; /* fond clair cohérent avec le reste */
+  background-color: #f5f3ff; 
   text-align: center;
   padding: 80px 20px;
 }
 
 .services h2 {
   font-size: 2.5rem;
-  color: var(--primary); /* violet tech */
+  color: var(--primary); 
   margin-bottom: 50px;
   font-weight: 700;
 }
 
-/* Grille des cartes */
+
 .plans-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
 }
 
-/* Carte individuelle */
+
 .plan-card {
   background-color: white;
   border: 1px solid #e5e7eb;

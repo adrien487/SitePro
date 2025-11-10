@@ -1,21 +1,21 @@
 .footer {
-  background-color: #1f1f1f; /* fond sombre pro */
-  color: #f5f3ff; /* texte clair */
+  background-color: #1f1f1f; 
+  color: #f5f3ff; 
   text-align: center;
-  padding: 20px 10px; /* compact mais lisible */
+  padding: 20px 10px; 
   font-size: 0.9rem;
 }
 
 .footer a {
-  color: #7f5af0; /* couleur primaire de ton site */
+  color: #7f5af0;
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 .footer a:hover {
-  color: #a78bfa; /* effet hover doux */
+  color: #a78bfa; 
 }
 
 .footer-content p {
-  margin: 5px 0; /* peu de marge pour que ce soit compact */
+  margin: 5px 0; 
 }
