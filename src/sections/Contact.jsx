@@ -95,9 +95,9 @@ export default function Contact({ selectedOffer }) {
               <label htmlFor="offer">Type d’offre</label>
               <select id="offer" name="offer" value={offer} onChange={(e) => setOffer(e.target.value)} required>
                 <option value="">Choisissez une offre</option>
-                <option value="Essential">Essential - 400€</option>
-                <option value="Basic">Basic - 600€</option>
-                <option value="Premium">Premium - 800€</option>
+                <option value="Essential">Essential </option>
+                <option value="Basic">Basic </option>
+                <option value="Premium">Premium </option>
                 <option value="Devis">Simple devis / discussion</option>
               </select>
             </div>

@@ -45,9 +45,10 @@ export default function About() {
           <div className="about-text">
             <h2>À propos de AA Développement</h2>
             <p>
-              Chez <strong>AA Développement</strong>, nous créons des sites vitrines sur mesure qui reflètent
-              l’identité et les valeurs de chaque client. Notre mission : transformer votre présence en ligne
-              en un véritable levier de croissance, fidèle à votre image et pensé pour durer.
+              Chez <strong>AA Développement</strong>, nous concevons des sites vitrines sur mesure, pensés pour refléter fidèlement votre identité, vos valeurs et vos ambitions.
+              Notre objectif est de transformer votre présence en ligne en un véritable moteur de croissance, durable, efficace et parfaitement aligné avec votre image.
+              Que vous ayez un projet en tête ou que vous souhaitiez simplement obtenir un devis, notre équipe est à votre écoute pour vous accompagner et vous proposer la solution la plus adaptée.
+              Contactez-nous dès maintenant et donnons vie à votre projet.
             </p>
 
             <div className="skills-container">

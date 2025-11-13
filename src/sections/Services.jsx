@@ -6,34 +6,37 @@ const Services = ({ onSelectOffer }) => {
   const plans = [
     {
       name: "Essential",
-      price: "400€",
       description: "Une présence simple mais professionnelle sur le web.",
       features: [
         "3 à 5 pages personnalisées",
         "Référencement SEO basique",
         "Design responsive",
+        "Intégration de vos contenus",
+        "Configuration des pages légales (mentions, contact…)",
         "Forfait de support maintenance et hébergement 1 mois à 30€/mois"
       ]
     },
     {
       name: "Basic",
-      price: "600€",
       description: "Idéal pour les entreprises souhaitant se démarquer.",
       features: [
         "5 à 7 pages personnalisées",
         "Référencement SEO et gestion des statistiques",
         "Sécurité renforcée",
+        "Design moderne et optimisé",
+        "Optimisation des performances",
         "Forfait de support maintenance et hébergement 1 mois à 35€/mois"
       ]
     },
     {
       name: "Premium",
-      price: "800€",
       description: "Solution complète et optimisée pour une présence forte.",
       features: [
         "7 à 10 pages dynamiques",
         "Optimisation SEO avancée",
-        "Performances et sécurité premium",
+        "Performances premium (vitesse + UX)",
+        "Sécurité premium (pare-feu, monitoring…)",
+        "Intégrations avancées (formulaires, modules, automatisations…)",
         "Forfait de support maintenance et hébergement 1 mois à 35€/mois"
       ]
     }
